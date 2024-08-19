@@ -27,4 +27,6 @@ class reverseShell:
 		return recv
 
 	def main(self):
-		self.send_msg('hello world')
+		# send message to connected client
+		if self.send_msg('[revShell] You have connected.') != None:
+			print('[+] Eror has occured')
